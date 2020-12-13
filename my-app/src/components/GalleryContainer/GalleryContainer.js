@@ -4,7 +4,7 @@ import get from '../utils/image-api';
 import ImageGallery from '../Components/ImageGallery/ImageGallery';
 import Button from '../Components/Button/Button';
 
-import LoaderSection from '../Components/Loader/Loader';
+import Loader from '../Components/Loader/Loader';
 
 class GalleryContainer extends Component {
   state = {
@@ -90,7 +90,7 @@ class GalleryContainer extends Component {
             {!isLoading && <Button pageChanger={this.pageChanger} />}
           </>
         )}
-        {isLoading && <LoaderSection />}
+        {isLoading && <Loader />}
       </>
     );
   }
