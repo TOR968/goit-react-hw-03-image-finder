@@ -35,7 +35,7 @@ class GalleryContainer extends Component {
     }
   };
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevState) {
     const { query, page } = this.state;
 
     if (query !== prevState.query) {
