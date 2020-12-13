@@ -2,7 +2,7 @@ import ImageGalleryItem from './ImageGalleryItem/ImageGalleryItem';
 import s from '../../utils/styles.module.css';
 import PropTypes from 'prop-types';
 
-const ImageGallery = ({ gallery }) => {
+function ImageGallery({ gallery }) {
   return (
     <>
       <ul className={s.ImageGallery}>
@@ -17,7 +17,7 @@ const ImageGallery = ({ gallery }) => {
       </ul>
     </>
   );
-};
+}
 
 ImageGallery.propTypes = {
   gallery: PropTypes.arrayOf(

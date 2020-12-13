@@ -3,7 +3,7 @@ import styles from '../../../utils/styles.module.css';
 import Modal from '../../Modal/Modal';
 import PropTypes from 'prop-types';
 
-const ImageGalleryItem = ({ url, alt, largeImageURL }) => {
+function ImageGalleryItem({ url, alt, largeImageURL }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -24,7 +24,7 @@ const ImageGalleryItem = ({ url, alt, largeImageURL }) => {
       )}
     </li>
   );
-};
+}
 
 ImageGalleryItem.propTypes = {
   url: PropTypes.string.isRequired,
